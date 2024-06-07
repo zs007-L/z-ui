@@ -17,8 +17,8 @@
     <Button type="info" plain>Info</Button>
     <Button type="warning" plain>Warning</Button>
     <Button type="danger" plain>Danger</Button><br /><br />
-    <Button size="large">Large</Button>
-    <Button size="small">Small</Button><br /><br />
+    <Button size="large" loading>Large</Button>
+    <Button size="small" icon="arrow-up">Small</Button><br /><br />
 
     <Collapse v-model="openValue" accordion>
       <CollapseItem name="a">

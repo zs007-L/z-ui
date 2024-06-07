@@ -60,4 +60,8 @@
   --z-disabled-bg-color: var(--z-fill-color-light);
   --z-disabled-text-color: var(--z-text-color-placeholder);
   --z-disabled-border-color: var(--z-border-color-light);
+
+  /*animation*/
+  --z-transition-duration: 0.3s;
+  --z-transition-duration-fast: 0.2s;
 }

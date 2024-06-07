@@ -33,6 +33,12 @@
   }
   &.is-active {
     border-bottom-color: transparent;
+    .header-angle {
+      transform: rotate(90deg);
+    }
+  }
+  .header-angle {
+    transition: transform var(--z-transition-duration);
   }
 }
 .z-collapse-item__content {
@@ -45,8 +51,7 @@
   border-bottom: 1px solid var(--z-collapse-border-color);
   padding-bottom: 25px;
 }
-
 .slide-enter-active,
 .slide-leave-active {
-  transition: height 0.5s ease-in-out;
+  transition: height var(--z-transition-duration);
 }

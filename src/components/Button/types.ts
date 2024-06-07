@@ -11,6 +11,8 @@ export interface ButtonProps {
   disabled?: boolean
   nativeType?: ButtonNativeType
   autofocus?: boolean
+  icon?: string
+  loading?: boolean
 }
 export interface ButtonInstance {
   ref: HTMLButtonElement
