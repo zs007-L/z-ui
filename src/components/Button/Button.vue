@@ -27,3 +27,7 @@ const buttonRef = ref<HTMLButtonElement>()
 
 defineExpose({ ref: buttonRef })
 </script>
+
+<style>
+@import './style.css';
+</style>
