@@ -1,5 +1,5 @@
 <template>
-    <button class="z-button" :class="{
+    <button ref="buttonRef" class="z-button" :class="{
         [`z-button--${type}`]: type,
         [`z-button--${size}`]: size,
         'is-disabled': disabled,
@@ -12,13 +12,18 @@
 </template>
 
 <script lang="ts" setup>
-import { defineOptions } from "vue";
+import { defineOptions, ref } from "vue";
 import type { ButtonProps } from './types';
 
 defineOptions({
     name: 'ZButton'
 });
+
 withDefaults(defineProps<ButtonProps>(), {
     nativeType: 'button'
 });
+
+const buttonRef = ref<HTMLButtonElement>()
+
+defineExpose({ ref: buttonRef })
 </script>
