@@ -18,11 +18,34 @@
     <Button type="danger" plain>Danger</Button><br /><br />
     <Button size="large">Large</Button>
     <Button size="small">Small</Button><br /><br />
+
+    <Collapse v-model="openValue" accordion>
+      <CollapseItem name="a">
+        <template #title>标题</template>
+        <div>内容</div>
+      </CollapseItem>
+      <CollapseItem name="b">
+        <template #title>标题</template>
+        <div>内容</div>
+        <div>内容</div>
+        <div>内容</div>
+        <div>内容</div>
+        <div>内容</div>
+        <div>内容</div>
+
+      </CollapseItem>
+    </Collapse>
+    {{ openValue }}
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import Button from './components/Button/Button.vue';
+import Collapse from './components/Collapse/Collapse.vue';
+import CollapseItem from './components/Collapse/CollapseItem.vue';
+
+const openValue = ref([])
 
 const onClick = () => {
   console.log('click');
