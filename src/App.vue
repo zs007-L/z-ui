@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Icon icon="arrow-up" type="primary"></Icon>
     <Button type="primary" @click="onClick">测试按钮</Button>
     <a href="">11111111</a>
     <Button plain>Plain Button</Button>
@@ -27,12 +28,6 @@
       <CollapseItem name="b">
         <template #title>标题</template>
         <div>内容</div>
-        <div>内容</div>
-        <div>内容</div>
-        <div>内容</div>
-        <div>内容</div>
-        <div>内容</div>
-
       </CollapseItem>
     </Collapse>
     {{ openValue }}
@@ -41,6 +36,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import Icon from './components/Icon/Icon.vue';
 import Button from './components/Button/Button.vue';
 import Collapse from './components/Collapse/Collapse.vue';
 import CollapseItem from './components/Collapse/CollapseItem.vue';
