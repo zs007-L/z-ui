@@ -35,16 +35,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import Icon from './components/Icon/Icon.vue';
-import Button from './components/Button/Button.vue';
-import Collapse from './components/Collapse/Collapse.vue';
-import CollapseItem from './components/Collapse/CollapseItem.vue';
+import { ref } from 'vue'
+import Icon from './components/Icon/Icon.vue'
+import Button from './components/Button/Button.vue'
+import Collapse from './components/Collapse/Collapse.vue'
+import CollapseItem from './components/Collapse/CollapseItem.vue'
 
 const openValue = ref([])
 
 const onClick = () => {
-  console.log('click');
+  console.log('click')
 }
 </script>
 
